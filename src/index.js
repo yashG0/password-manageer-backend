@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import app from "./app.js";
 import express from "express";
 import formRoutes from "./routes/form.route.js";
-import connectToDatabase from "../dbConfig/db.js";
+import connectToDatabase from "./dbConfig/db.js";
 import cors from "cors";
 
 
@@ -26,7 +26,7 @@ app.use(cors(corsOptions));
 
 // ROOT ->
 app.get("/", (req, res) => {
-    res.send("Backend Working Successfully.")
+    res.send("Password Manager Backend Working Successfully.")
 })
 
 // DATABASE CONNECTION ->
